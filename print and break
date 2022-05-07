@@ -1,0 +1,9 @@
+#include <stdio.h>
+ 
+int main() 
+{
+   printf("Hello\tWorld\n");
+    printf("Welcome to Learn to code 2022\n");
+
+    return 0;
+}
