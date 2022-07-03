@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+float tarea();
+float sarea();
+float rarea();
+int main()
+{
+    float area=0;
+    int no;
+    char ch;
+    scanf("%d\n", &no);
+    if(no==3)
+        area=tarea();
+    else if(no==4) 
+    {
+        scanf("%c\n", &ch);
+        if (ch=='R')
+            area=rarea();
+        else if(ch=='S')
+            area=sarea();
+    }               
+    printf("%.1f\n", area);
+}
+float tarea()
+{ 
+    int a,b,c;
+    float area;
+    scanf("%d%d%d", &a, &b, &c);
+    area = (a+b+c)/2.0; 
+    return(area); 
+}
+    
+float sarea()
+{
+    int s;
+    float area;
+    scanf("%d", &s);
+    area = s*s;
+    return(area);
+}
+
+float rarea()
+{
+    int l,b;
+    float area;
+    scanf("%d%d", &l,&b);
+    area = l*b;
+    return(area);
+}
+    
