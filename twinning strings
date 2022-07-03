@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+   char str1[100];  
+   char str2[100];    
+   int value;   
+    
+  gets(str1);  
+   
+   gets(str2);  
+    
+   
+   value=strcmp(str1,str2);
+    if(value==0)  
+   printf("The strings are equal.");  
+   else  
+   printf("The strings aren't equal.");  
+      
+    return 0;
+}
