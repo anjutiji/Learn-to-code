@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n1,n2,n3;
+    scanf("%d\n", &n1);
+    scanf("%d\n", &n2);
+    scanf("%d\n", &n3);
+    if (n1==n2 && n1==n3) 
+    {
+        printf("Equilateral Triangle");
+    }
+    else if (n1==n2 || n1==n3)
+    {
+        printf("Isosceles Triangle");
+    }
+    else
+    {
+        printf("Scalene Triangle");
+    
+    }
+    return 0;
+}
