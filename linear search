@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int i,n,a[20],flag=0,key;
+    printf("Enter the number of elements in the array:\n");
+    scanf("%d",&n);
+    printf("Enter the array elements:\n");
+        for(i=0;i<n;i++)
+        {
+            scanf("%d\n",&a[i]);
+        }
+    printf("Enter the element to be searched:\n");
+    scanf("%d\n",&key);
+        for(i=0;i<n;i++)
+        {
+            if(a[i]==key)
+            {
+            flag=1;
+            break;
+            }
+        }
+    if(flag==1)
+        printf("Location is :\n%d",i+1);
+    else
+        printf("The number not found");
+        
+    return 0;
+}
