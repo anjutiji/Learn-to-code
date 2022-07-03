@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+float VolFrust();
+int main() 
+{
+    int R,r,h;
+    float v;
+    scanf("%d\n", &R);
+    scanf("%d", &r);
+    scanf("%d\n", &h);
+    v = 3.1415926535898*h/3 *(R*R+r*r+R*r); 
+
+    printf("%.2f",v);
+    
+    
+    return 0;
+}
