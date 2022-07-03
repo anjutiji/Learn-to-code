@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int i,n;
+   float item,cost,total;
+    cost=0;
+    scanf("%d\n",&n);
+    for(i=1;i<=n;i++)
+    {
+         scanf("%f\n",&item);
+  
+    if(item==1)
+      cost=cost+15;
+    else if(item==2)
+      cost=cost+5;
+    else if(item==3)
+      cost=cost+10;
+    else if(item==4)
+      cost=cost+(80-(80*0.05));
+    else if(item==5)
+      cost=cost+(125-(125*0.05));
+    else if(item==6)
+      cost=cost+100;        
+    else if(item==7)
+      cost=cost+60;
+    }
+        
+    printf("%.3f\n",cost);
+    total=cost+(cost*2)/100;
+    printf("%.3f",total);
+    return 0;
+}
