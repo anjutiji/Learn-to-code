@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int num;
+    int flag = 1;
+    int i;
+    int x;
+    scanf("%d", &num);
+    x = num/2;
+    if (x == 0 || x == 1);
+    flag = 1;
+    for (i = 2; i < num/2; ++i) {
+        if (x % i == 0) {
+      flag = 0;
+      break;
+    }
+  }
+    if (flag == 1)
+    printf("Number is prime");
+  else
+    printf("Number is not prime");
+
+  return 0;
+}
