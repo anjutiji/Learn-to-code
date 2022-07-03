@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int fact (int);
+int pfsqr (int);
+int main() 
+{
+    int no;
+    int f;
+    scanf("%d\n",&no);
+    f=fact(no);
+    printf("%d\n",f);
+ 
+
+    if(pfsqr(no))
+         printf("Perfect Square");
+     else
+        printf("Not Perfect Square");
+    
+}    
+
+int fact(int n)
+{
+    if (n<=1)
+        return 1;
+    else 
+        return n*fact(n-1);
+}
+
+int pfsqr(int n)
+{
+    int s;
+    s=sqrt(n);
+    if (s*s==n)
+        return 1;
+    else 
+        return 0;
+}
