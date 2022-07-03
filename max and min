@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int arr[100],n,i,min,max; 
+    min=max==arr[0];
+    scanf("%d",&n);
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for (i = 0; i < n; i++)
+    {
+        if (arr[i] < min)
+        {
+            min = arr[i];
+        }
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
+    }
+    printf("%d\n", max);
+    printf("%d", min);   
+return 0;
+}
