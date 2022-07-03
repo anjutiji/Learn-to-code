@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int grade,mark,totalmark,i;
+    for(i=1;i<=5;i++)
+    {
+        scanf("%d\n",&totalmark);
+        scanf("%d\n",&mark);
+        grade=(mark*100)/totalmark;
+    
+    if (grade>=90)
+        printf("S\n");
+    else if(grade>=85)
+        printf("A+\n");
+    else if(grade>=80)
+        printf("A\n");
+    else if(grade>=75)
+        printf("B+\n");
+    else if(grade>=70)
+        printf("B\n");
+    else if(grade>=65)
+        printf("C+\n");
+    else if(grade>=60)
+        printf("C\n");
+    else if(grade>=55)
+        printf("D\n");
+    else if(grade>=40)
+        printf("P\n");
+    else 
+        printf("F\n");
+    }
+    return 0;
+}
